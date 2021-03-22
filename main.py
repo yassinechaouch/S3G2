@@ -4,7 +4,7 @@ from gpiozero import MotionSensor
 red_led = LED(15)
 pir = MotionSensor(14)
 red_led.off()
-while True:
+while True :
     pir.wait_for_motion()
     print("Motion Detected")
     red_led.on()
