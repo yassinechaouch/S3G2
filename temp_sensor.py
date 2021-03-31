@@ -21,3 +21,4 @@ sleep(1)
 
 print("Ambient Temperature:", ambientTemp, "°C")
 print("Target Temperature:", targetTemp, "°C")
+
