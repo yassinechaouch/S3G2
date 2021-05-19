@@ -3,7 +3,7 @@
 /*
 private $host = "localhost";
 private $username = "root";
-private $password = "mitnicksenpaiphpmyadmin101";
+private $password = "";
 private $dbname = "SMART-MIRROR";
 private $conn;*/
 
