@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Smart Mirror</title>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <link rel="stylesheet" type="text/css" href="menu.css">
+ <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Roboto&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div id="curves" class="box">
+ <div id="outh"></div>
+</div>
+
+<div id="smile">
+ <div class="mouth">M</div>
+</div>
+ <div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger">
+   <div></div>
+  </div>
+  <div class="menu">
+   <div>
+    <div>
+     <ul>
+
+      <li><a href="#">Power Switch</a>
+      <label class="switch">
+       <input type="checkbox">
+       <span class="slider round"></span>
+      </label>
+      </li>
+
+      <li><a href="#">LED Controls </a>
+      <label class="switch">
+       <input type="checkbox">
+       <span class="slider round"></span>
+      </label>
+      </li>
+      <li><a href="#">Brightness</a>
+     <!-- <label class="switch">
+       <input type="checkbox">
+       <span class="slider round"></span>
+      </label>-->
+      <div class="slidecontainer">
+        
+        <input type="range" min="1" max="100" value="50">
+      </div></li>
+
+       <li><a href="#">Calendar</a>
+        <label class="switch">
+         <input type="checkbox">
+         <span class="slider round"></span>
+        </label>
+       </li>
+
+        <li><a href="#">Weather</a>
+         <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+         </label>
+        </li>
+      
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+
+<div class="page-content">
+  <h1>Connect to your Smart Mirror</h1>
+  <div class="form-container">
+  <form class="contact-form" method="POST" action="login.php">
+    <label for="name">Username <span class="required">*</span></label>
+    <input type="username" class="text-input" name="name" /><br />
+    <label for="email">Password: <span class="required">*</span></label>
+    <input type="password" class="text-input" name="email" /><br />
+    <br />
+    <input type="submit" value="Send" class="send" />
+  </form>
+  </div>
+</div>
+
+<div class="row">
+   <div class="column">
+    <div class="card">
+      <div class="flip-card">
+       <div class="flip-card-inner">
+        <div class="flip-card-front">
+         <img src="imgs/sm.jpg" alt="Avatar">
+        </div>
+        <div class="flip-card-back">
+         <h1>LED Back Lighting</h1>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe amet dolor voluptate reprehenderit quisquam ullam accusantium animi obcaecati. Quisquam nulla blanditiis, asperiores commodi consequuntur laboriosam consectetur necessitatibus quod tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus,Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        </div>
+       </div>
+      </div>
+    </div>
+   </div> 
+  
+ <div class="column">
+    <div class="card">
+   <div class="flip-card">
+    <div class="flip-card-inner">
+     <div class="flip-card-front">
+      <img src="imgs/carousel_2.jpg" alt="Avatar" style="width:300px;height:300px;">
+     </div>
+     <div class="flip-card-back">
+      <h1>Temperature Sensor</h1>
+   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, exercitationem corporis! Odit vero, et veritatis numquam quo eum. Soluta, expedita harum! Laboriosam dicta sit recusandae corporis, saepe quo hic quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eligendi eum 
+     </div>
+    </div>
+   </div>
+    </div>
+    </div>
+  
+   <div class="column">
+    <div class="card">
+   <div class="flip-card">
+    <div class="flip-card-inner">
+     <div class="flip-card-front">
+      <img src="imgs/carousel_3.jpg" alt="Avatar">
+     </div>
+     <div class="flip-card-back">
+      <h1>PIR Motion Sensor</h1>
+     div Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus laboriosam dolorum cupiditate doloremque ev
+     </div>
+    </div>
+   </div>
+    </div>
+    </div>
+</div>
+
+<script>
+let companies =
+[
+
+  {
+    "name": "big cop",
+    "numberOfEmployees":1000,
+     "ceo":"Mary",
+     "rating":3.6
+  },
+
+  {
+    "name":"Small startup",
+    "numberOfEmployees":3,
+    "ceo":null,
+    "rating":4.3
+
+  }
+
+]
+console.log(companies);
+</script>
+
+
+
+
+</body>
+</html>
