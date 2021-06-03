@@ -1,0 +1,31 @@
+<!--
+    INSERT THIS HTML CODE TO YOUR WORK IF YOU WANT YOUR PYTHON CODE OUTPUT TO BE PRESENTED IN THE WEBSITE
+    First of all, you need to enable your server to run .py files (keyword: cgi-bin), 
+    then upload your .py file to your cgi-bin folder 
+    (Hint for Windows Users: save all your files with "Linux/Unix Format" - On npp go to Edit/EOL Conversion/Linux Format).
+-->
+
+<head>
+    <script src="jquery-2.0.3.js"></script>
+    <script>
+        $(function ReadTemperature() {
+            $.ajax({
+                url: "http://my-server/cgi-bin/fetchVar.py",
+                type: "post",
+                datatype: "html",
+                data: {
+                    webArguments: "aiTemperature" //Arguments you want to send to your .py
+                },
+                success: function(response){
+                        $("#aiTemperature").html(response);
+                },
+                complete: function() {
+                    setTimeout(ReadTemperature, 2000);   //Refresh value every 2 seconds
+                }
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <p>Current temperature: <div id="aiTemperature"></div> °C.</p>
+    </body>
